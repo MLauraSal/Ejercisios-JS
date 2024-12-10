@@ -45,7 +45,13 @@ Crear un programa que al ingresar una nota de un alumno, muestre con un alert() 
 “aprobado” (se aprueba con una nota mayor a 7) y “reprobado” en caso contrario  
 ### Ejercicio 15  
 Crear un programa tal que dado como datos la categoría y el sueldo de un trabajador, calcule el
-aumento correspondiente teniendo en cuenta la siguiente tabla. Mostrar con un Alert() la categoría y
+aumento correspondiente teniendo en cuenta la siguiente tabla.  
+categoría   
+1 15%  
+2 10%  
+3 8%  
+4 7%    
+Mostrar con un Alert() la categoría y
 el nuevo sueldo
 ### Ejercicio 16
 Crear un programa tal que dado como datos la matrícula y 5 calificaciones de un alumno; imprima la

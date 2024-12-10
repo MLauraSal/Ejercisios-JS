@@ -93,8 +93,8 @@ function ejercicio14() {
 }
 
 function ejercicio15() {
-    let categoria = parseInt(prompt("Ingresa la categoría del trabajador (1, 2, 3, 4):"));
-    let sueldo = parseFloat(prompt("Ingresa el sueldo del trabajador:"));
+    let categoria = parseInt(prompt("Ingresar la categoría del trabajador (1, 2, 3, 4):"));
+    let sueldo = parseFloat(prompt("Ingresar el sueldo del trabajador:"));
     let aumento;
 
     switch (categoria) {
@@ -111,7 +111,7 @@ function ejercicio15() {
             aumento = sueldo * 0.07;
             break;
         default:
-            alert("Categoría no válida. Por favor, ingresa un valor entre 1 y 4.");
+            alert("Categoría no válida. Por favor, ingresar un valor entre 1 y 4.");
             return;
     }
 

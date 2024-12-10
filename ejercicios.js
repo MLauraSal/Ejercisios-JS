@@ -145,3 +145,7 @@ function ejercicio17() {
         console.log("El mayor número es: " + mayor);
     }
 }
+
+function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+}

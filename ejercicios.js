@@ -93,21 +93,32 @@ function ejercicio14() {
 }
 
 function ejercicio15() {
-    let categoria = prompt("Ingresar la categoría del trabajador (A, B, C, D):");
-    let sueldo = parseFloat(prompt("Ingresar el sueldo del trabajador:"));
+    let categoria = parseInt(prompt("Ingresa la categoría del trabajador (1, 2, 3, 4):"));
+    let sueldo = parseFloat(prompt("Ingresa el sueldo del trabajador:"));
     let aumento;
 
-    switch (categoria.toUpperCase()) {
-        case "A": aumento = sueldo * 0.10; break;
-        case "B": aumento = sueldo * 0.15; break;
-        case "C": aumento = sueldo * 0.20; break;
-        case "D": aumento = sueldo * 0.25; break;
-        default: aumento = 0; break;
+    switch (categoria) {
+        case 1:
+            aumento = sueldo * 0.15;
+            break;
+        case 2:
+            aumento = sueldo * 0.10;
+            break;
+        case 3:
+            aumento = sueldo * 0.08;
+            break;
+        case 4:
+            aumento = sueldo * 0.07;
+            break;
+        default:
+            alert("Categoría no válida. Por favor, ingresa un valor entre 1 y 4.");
+            return;
     }
 
     let nuevoSueldo = sueldo + aumento;
-    alert("Categoría: " + categoria + "\nNuevo sueldo: " + nuevoSueldo);
+    alert(`Categoría: ${categoria}\nNuevo sueldo: $${nuevoSueldo.toFixed(2)}`);
 }
+
 
 function ejercicio16() {
     let matricula = prompt("Ingresa la matrícula del alumno:");
